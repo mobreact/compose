@@ -22,7 +22,6 @@
     {{- partial "nav" . }}
   </header>
   <div class="main wrap pt-4">
-    {{ printf “%#v” .complete }}
     {{- if eq .Section "docs" }}
     {{- partial "document" . }}
     {{- else if eq .Section "x-compose" }}
