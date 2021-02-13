@@ -164,6 +164,8 @@ function parseBoolean(string) {
 }
 
 function loadSvg(file, parent, path = 'icons/') {
+  console.log('loadSvg',`${path}${file}.svg`, rootURL);
+  
   const link = new URL(`${path}${file}.svg`, rootURL).href;
   fetch(link)
   .then((response) => {
