@@ -6,6 +6,7 @@ const menu = 'menu';
 
 // defined in config.toml
 const rootURL = '{{ absURL "" }}';
+console.log('rootURL', rootURL);
 
 // defined in i18n / translation files
 const quickLinks = '{{ T "quick_links" }}';
